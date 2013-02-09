@@ -1,8 +1,6 @@
 <?php
     session_start();
 
-    include_once "conf.php";
-
     include_once "linkedin.php";
 
     # First step is to initialize with your consumer key and secret. We'll use an out-of-band oauth_callback
