@@ -33,7 +33,8 @@ class LinkedIn {
 	function getRequestToken()
 	{
 		$consumer = $this->consumer;
-		$request = OAuthRequest::from_consumer_and_token($consumer, NULL, "GET", $this->request_token_path, "scope=r_basicprofile+r_emailaddress+r_network");
+		$request = OAuthRequest::from_consumer_and_token($consumer, NULL, "GET", $this->request_token_path);
+		echo $request;
 		$request->set_parameter("oauth_callback", $this->oauth_callback);
 		$request->sign_request($this->signature_method, $consumer, NULL);
 		$headers = Array();
