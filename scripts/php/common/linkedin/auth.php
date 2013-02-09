@@ -6,7 +6,7 @@
     $config['linkedin_access']      =   'fgj883d6l6hs';
     $config['linkedin_secret']      =   'bgGlOuMtbAwAykAg';
 
-    include_once "lib/linkedin.php";
+    include_once "linkedin.php";
 
     # First step is to initialize with your consumer key and secret. We'll use an out-of-band oauth_callback
     $linkedin = new LinkedIn($config['linkedin_access'], $config['linkedin_secret'], $config['callback_url'] );
