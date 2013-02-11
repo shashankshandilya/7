@@ -10,4 +10,16 @@ require 'iwylogger'
 
 class LinkConnect
 
+	COMMON_COLLECTION                        = "common"
+  LINKCONNECT_USER_COLLECTION              = "luser"
+  COMPANY_COLLECTION                       = "company"
+  SKILLS_COLLECTION                        = "skills"
+  LINKCONNECT_CITY_GEO_MAPPER              = "geomap"
+  LINKCONNECT_DB_NAME                      = "lconnect"
+  
+
+
+  def parseJson()
+  end
+  
 end
